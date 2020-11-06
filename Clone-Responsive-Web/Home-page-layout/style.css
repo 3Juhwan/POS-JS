@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===============================
+Typograpgy
+=========================*/
+
+h1 {
+  /* font-family: ; */
+  font-weight: 800;
+  color: #143774;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 900;
+  font-size: 1rem;
+  color: #1792d2;
+  margin: 0;
+}
+
+/* ===============================
+Layout
+=========================*/
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  /* border: 1px solid magenta; */
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background: #f8f8f8;
+  padding: 2em 0;
+}
+
+@media (max-width: 1000px) {
+  header {
+    text-align: center;
+  }
+  .container-nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 0.5em 0;
+  }
+}
+
+/* Navigation */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center; /*text 아니고 flex-box엔 이걸 적용하자...!*/
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 900;
+  padding: 0.25rem 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+  color: #707070;
+}
