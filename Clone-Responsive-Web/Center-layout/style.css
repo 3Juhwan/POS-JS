@@ -1,0 +1,80 @@
+body {
+  font-size: 1.125rem;
+  color: #707070;
+  margin: 0;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3rem;
+  color: #212614;
+  text-align: center;
+}
+
+h1 span {
+  color: #b7832f;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* Layout */
+
+.container {
+  width: 95%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.img-cover {
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.poster-elephant {
+  width: 100%;
+}
+
+.rows {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1em 0;
+}
+
+.col-1 {
+  width: 20%;
+}
+
+.col-2 {
+  width: 45%;
+}
+
+.col-3 {
+  width: 70%;
+}
+
+@media (max-width: 700px) {
+  .rows {
+    flex-direction: column;
+  }
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 100%;
+  }
+}
+
+.box-bg {
+  background: #212614;
+  color: white;
+  padding: 1em;
+}
